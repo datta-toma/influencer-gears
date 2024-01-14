@@ -72,6 +72,51 @@ nav a{
     display: flex;
     justify-content: space-evenly;
     padding-top: 50px;
+}
+.collection-contain{
+    margin: 40px;
     
-   
+}
+.collection-title{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.icons{
+    color: gold;
+}
+.collection-card1-container{
+    display: flex;
+    gap: 100px;
+    justify-content:center;
+}
+.in{
+    padding: 30px;
+}
+.card{
+    background-color:rgb(241, 237, 245);
+    padding-left: 10px;
+}
+.collection-card2-container{
+    display: flex;
+    gap: 100px;
+    justify-content:center;
+    padding-top: 50px;
+}
+.collection-card3-container{
+    display: flex;
+    gap: 100px;
+    justify-content:center;
+    padding-top: 50px;
+}
+.btn1{
+    background-color: white;
+    border-color: white;
+    color: red;
+    font-size: 18px;
+   float: right;
+   padding-right: 200px;
+   padding-top: 20px;
 }
