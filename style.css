@@ -1,0 +1,67 @@
+/* common shared style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* nav related styles */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    margin-top: 50px;
+}
+
+.nav-title{
+    font-size: 24px;
+    color: #3A3A3A;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 50px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+
+/* banner styles */
+.banner{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-around;
+    margin: 40px;
+  }
+  .camera-contain{
+    background-image: url('/images/Circle\ design.svg');
+    padding-right: 38px;
+    padding-bottom: 20px;
+  }
+.banner-contain{
+    padding: 10px;
+}
+.banner-title{
+    font-size: 50px;
+    color: #3A3A3A;
+}
+.banner-discrib{
+    font-size: 20px;
+    color: #3A3A3A;
+}
+.btn{
+    border-radius: 10px;
+    padding: 8px;
+    color: whitesmoke;
+    background-color: rgb(213, 51, 51);
+}
