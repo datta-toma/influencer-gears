@@ -1,23 +1,21 @@
 /* common shared style */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 body{
     font-family: 'Poppins', sans-serif;
 }
 
 
 /* nav related styles */
-
+/* header{
+    padding: 50px 240px;
+} */
 nav{
     display: flex;
     justify-content: space-between;
     margin: 0 200px;
     margin-top: 50px;
+    flex-direction: row;
 }
 
 .nav-title{
@@ -26,10 +24,12 @@ nav{
 }
 nav > ul{
     display: flex;
+    flex-direction: row;
 }
 nav li{
     list-style: none;
     margin-right: 50px;
+    color: #3A3A3A;
     
 }
 nav a{
@@ -41,6 +41,7 @@ nav a{
     display: flex;
     justify-content: space-around;
     margin: 40px;
+    flex-direction: row;
   }
   .camera-contain{
     background-image: url('/images/Circle\ design.svg');
@@ -70,9 +71,18 @@ nav a{
 
 .sponsors-img-container{
     display: flex;
+    gap: 20px;
     justify-content: space-evenly;
+    align-items: center;
     padding-top: 50px;
+    flex-direction: row;
 }
+.sponsors-img-container img{
+    width: 165px;
+}
+
+/* popular collection */
+
 .collection-contain{
     margin: 40px;
     
@@ -91,6 +101,7 @@ nav a{
     display: flex;
     gap: 100px;
     justify-content:center;
+    flex-direction: row;
 }
 .in{
     padding: 30px;
@@ -99,17 +110,27 @@ nav a{
     background-color:rgb(241, 237, 245);
     padding-left: 10px;
 }
+.card-stats{
+    font-size: 24px; 
+    color: #18191F;
+}
+.card-title{
+    font-size: 18px;
+    color: #6C6C6C;
+}
 .collection-card2-container{
     display: flex;
     gap: 100px;
     justify-content:center;
     padding-top: 50px;
+    flex-direction: row;
 }
 .collection-card3-container{
     display: flex;
     gap: 100px;
     justify-content:center;
     padding-top: 50px;
+    flex-direction: row;
 }
 .btn1{
     background-color: white;
@@ -119,4 +140,75 @@ nav a{
    float: right;
    padding-right: 200px;
    padding-top: 20px;
+}
+
+/* featured products work */
+
+.featured-contain{
+    display: flex;
+    gap: 100px;
+   margin: 150px;
+   flex-direction: row;
+}
+.img-contan img{
+    width:189px ;
+    height: 277px;
+}
+.featured-title{
+    font-size:38px ;
+    color: #0A0826;
+}
+.featured-describ{
+    font-size: 18px;
+    color: #6C6C6C;
+}
+ 
+/* footer work */
+
+.foot{
+    background-color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 300px;
+   border: 2px solid red;
+ 
+
+}
+.product{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 30px;
+}
+.icon-contan{
+    display: flex;
+    gap: 30px;
+    color: whitesmoke;
+    justify-content: center;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+
+/* responsive media queries */
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    /* header{
+        padding: 20px;
+    } */
+    nav > ul,
+    nav, .banner,.sponsors-img-container,
+    .collection-card1-container,
+    .collection-card2-container,
+    .collection-card3-container,.featured-contain{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .featured-contain{
+        flex-direction: column-reverse;
+    }
+    
+   
 }
