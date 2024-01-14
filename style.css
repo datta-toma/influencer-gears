@@ -39,7 +39,6 @@ nav a{
 /* banner styles */
 .banner{
     display: flex;
-    border: 2px solid red;
     justify-content: space-around;
     margin: 40px;
   }
@@ -64,4 +63,15 @@ nav a{
     padding: 8px;
     color: whitesmoke;
     background-color: rgb(213, 51, 51);
+}
+
+
+/* sponsors work */
+
+.sponsors-img-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+    
+   
 }
